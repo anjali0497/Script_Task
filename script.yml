@@ -1,0 +1,32 @@
+tasks:
+  create_user:
+    description: "Create a new user with specified username, password, and home directory."
+    parameters:
+      - name: USER_NAME
+        type: string
+        description: "The username for the new user."
+      - name: USER_PASSWORD
+        type: string
+        description: "The password for the new user."
+      - name: USER_HOME
+        type: string
+        description: "The home directory for the new user."
+
+  list_user:
+    description: "List all user accounts on the system."
+    parameters: []
+
+  delete_user:
+    description: "Delete a user by username."
+    parameters:
+      - name: USER_NAME
+        type: string
+        description: "The username of the user to delete."
+
+  install_software:
+    description: "Install a specified software package."
+    parameters:
+      - name: SOFTWARE_NAME
+        type: string
+        description: "The name of the software package to install."
+
